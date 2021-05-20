@@ -22,7 +22,7 @@ void loop()
  dur= pulseIn(echoPin, HIGH);
  dist= (dur / 2) / 29.1; 
  
- if (dist>= 40 || dist<= 0) 
+ if (dist>= 30 || dist<= 0) 
  {
  Serial.println("target");
  digitalWrite(buzz, LOW);
